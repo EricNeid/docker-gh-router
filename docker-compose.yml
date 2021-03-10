@@ -7,15 +7,15 @@ services:
       context: service-routing
     volumes:
       - ./logs:/logs
+      - ./graph-cache:/graph-cache
       - ./conf-routing:/conf
       - ./datasource-routing:/datasource
-      - ./graph-cache:/graph-cache
     command: server conf/config.yml
     ports:
       - 8989:8989
 
   nginx:
-    image: nginx:1.17.3-alpine
+    image: nginx:1.18.0-alpine
     volumes: 
       - ./conf-nginx/.htpasswd:/etc/nginx/.htpasswd
       - ./conf-nginx/nginx.conf:/etc/nginx/nginx.conf
