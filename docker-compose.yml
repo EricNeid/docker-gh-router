@@ -1,0 +1,13 @@
+version: '3.3'
+
+services:
+  service-routing:
+    build:
+      context: service-routing
+    volumes:
+      - ./logs:/logs
+      - ./conf-routing:/conf
+      - ./datasource-routing:/datasource
+    command: server conf/config.yml
+    ports:
+      - 8989:8989
