@@ -2,11 +2,11 @@ FROM adoptopenjdk:11-jre-hotspot
 
 RUN useradd --no-create-home --no-user-group --shell /bin/bash appuser
 
-RUN mkdir conf datasource graph-cache
+RUN mkdir conf datasource
 
 COPY graphhopper-web-2.3.jar graphhopper-web-2.3.jar
 
-RUN chown appuser conf datasource graph-cache
+RUN chown appuser conf datasource
 
 USER appuser
 
