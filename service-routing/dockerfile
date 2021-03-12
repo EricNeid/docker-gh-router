@@ -1,4 +1,4 @@
-FROM openjdk:10
+FROM adoptopenjdk:11-jre-hotspot-bionic
 
 COPY graphhopper-web-2.3.jar graphhopper-web-2.3.jar
 
