@@ -56,5 +56,5 @@ sudo apt-get install apache2-utils
 Use it:
 
 ```bash
-htpasswd nginx/.htpasswd new-user
+htpasswd nginx/.htpasswd <new-user-name>
 ```
