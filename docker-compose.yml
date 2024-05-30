@@ -8,9 +8,9 @@ services:
     volumes:
       - ./logs:/logs
       - ./graph-cache:/graph-cache
-      - ./conf-routing:/conf
-      - ./datasource-routing:/datasource
-    command: server conf/config.yml
+      - ./conf-routing:/conf-routing
+      - ./datasource-routing:/datasource-routing
+    command: server conf-routing/config.yml
     ports:
       - 8989:8989
 

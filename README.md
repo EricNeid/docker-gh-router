@@ -8,13 +8,23 @@ Features:
 
 ## Quickstart
 
-Start everything using compose:
+### Docker
 
 ```bash
 docker-compose up
 ```
 
 Test if anything meaningful is returned: <http://localhost:1000/info>.
+
+### Java
+
+To just start graphhopper without docker and nginx:
+
+```bash
+java -jar service-routing/graphhopper-web-2.3.jar server conf-routing/config.yml
+```
+
+You should see map ui: <http://localhost:8989/maps/>.
 
 ## API
 
