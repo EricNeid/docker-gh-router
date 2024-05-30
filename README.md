@@ -6,6 +6,16 @@ Features:
 
 * Routing service using GraphHopper
 
+## Quickstart
+
+Start everything using compose:
+
+```bash
+docker-compose up
+```
+
+Test if anything meaningful is returned: <http://localhost:1000/info>.
+
 ## API
 
 Documentation for graphhopper is available here:
